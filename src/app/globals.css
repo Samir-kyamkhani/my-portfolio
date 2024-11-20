@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  html {
+    @apply font-dm-sans;
+  }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+body[data-new-gr-c-s-check-loaded][data-gr-ext-installed][cz-shortcut-listen] {
+  [data-new-gr-c-s-check-loaded],
+  [data-gr-ext-installed],
+  [cz-shortcut-listen] {
+    display: none !important;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* styles/globals.css */
+  .loader {
+    border-top-color: #1e3b0b; /* Adjust to your theme color */
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width: 390px) {
+    .custom-margin {
+      margin-bottom: -0.5rem;
+    }
+  }
+
+  @media (min-width: 391px) {
+    .custom-margin {
+      margin-bottom: 0;
+    }
+  }
+  /* Loader spinner */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader {
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #000; /* Your theme color */
+  }
+}
