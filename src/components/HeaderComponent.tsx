@@ -13,39 +13,35 @@ import { TbHomeFilled } from "react-icons/tb";
 export default function HeaderComponent() {
   return (
     <>
-      <div>
-        {/* Head component */}
-        <div className="w-full flex justify-center">
-          <div className="max-w-[952px] min-w-[22rem] py-2 px-20 bg-[#F1F1F1] flex overflow-hidden space-x-10 group mask-gradient">
-            <div className="flex flex-row space-x-10 animate-loop-scroll group-hover:paused">
-              <div className="text-sm font-semibold overflow-visible min-w-[15rem]">
-                LATEST WORK AND{" "}
-                <span className="text-[#1E3B0B]"> FEATURED. </span>
-              </div>
-              <div className="text-sm font-semibold overflow-visible min-w-[15rem]">
-                LATEST WORK AND{" "}
-                <span className="text-[#1E3B0B]">FEATURED. </span>
-              </div>
-              <div className="text-sm font-semibold overflow-visible min-w-[15rem]">
-                LATEST WORK AND{" "}
-                <span className="text-[#1E3B0B]">FEATURED. </span>
-              </div>
+      <div className="overflow-hidden">
+        <div className="flex justify-center ">
+          <div className="max-w-[952px] w-full bg-[#F1F1F1] py-2 px-4 flex overflow-hidden space-x-4 group mask-gradient">
+            <div className="flex space-x-10 animate-loop-scroll group-hover:pause">
+              {Array(3)
+                .fill(0)
+                .map((_, i) => (
+                  <div
+                    key={i}
+                    className="text-sm font-semibold whitespace-nowrap"
+                  >
+                    LATEST WORK AND{" "}
+                    <span className="text-[#1E3B0B]">FEATURED.</span>
+                  </div>
+                ))}
             </div>
           </div>
         </div>
 
-        {/* SubHead component */}
-        <div className="w-full overflow-hidden flex min-w-[21rem] max-w-[952px] justify-center sm:mb-0 mb-[-2.2rem] custom-margin">
-          <div className="rounded-b-xl aspect-[3/1] min-w-[22rem] max-w-[952px] max-h-[318px] min-h-[11rem] inline-block mx-auto overflow-hidden bg-cover bg-center">
+        <div className="flex justify-center  ">
+          <div className="relative  rounded-b-xl overflow-hidden aspect-[3/1] max-w-[952px] w-full min-h-[11rem]">
             <img
               src="/cam.jpg"
-              alt="cam"
-              className="w-auto sm:w-[100vw] h-auto"
+              alt="Camera Banner"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
 
-        {/* SubHead component */}
         <div className="w-full flex justify-center ">
           <div className="w-[952px] max-w-[952px] max-h-[5rem] flex justify-between items-center px-[1.2rem] mt-[-0.8rem] sm:px-[1rem] lg:px-0 md:mt-[-0.2rem] lg:mt-0">
             <div className="flex flex-wrap items-center gap-3 sm:mt-[-1.5rem]">
