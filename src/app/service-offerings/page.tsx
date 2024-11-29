@@ -170,7 +170,7 @@ export default function page() {
               <div className="flex justify-center w-full">
                 <div className="w-full max-w-[17rem] sm:max-w-[25rem] lg:min-w-[30rem] min-w-full h-fit shadow-lg rounded-2xl bg-white text-[#192025] overflow-hidden flex flex-col mt-4  p-4 px-4">
                   <div className="w-full h-24  object-cover rounded-2xl bg-[#FBFBFC] text-[2rem] flex justify-between  items-center gap-2 pl-2 font-bold">
-                    Let's Work together.
+                    {"Let's Work together."}
                   </div>
                   <div className="mt-4">
                     <Link href="contact-info">

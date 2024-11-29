@@ -34,7 +34,7 @@ export default async function ProjectDetailPage({
           <ProjectDetail
             title={project.title}
             description={project.description}
-            images={project.images}
+            img={project.images}
             rating={project.rating}
             tags={project.tags}
             year={project.year}

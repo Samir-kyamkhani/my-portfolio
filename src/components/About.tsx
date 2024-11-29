@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -12,7 +13,8 @@ export default function About() {
               {/* Header */}
               <div className="bg-white px-4 py-2 flex items-center gap-2">
                 <div className="w-9 h-9  overflow-hidden  border-black/5 border-2   bg-cover bg-center rounded-full ">
-                  <img
+                  <Image
+                  alt="profile"
                     src="/profile.jpg"
                     className="scale-[3] object-cover mt-5 ml-[-0.7rem]"
                   />
@@ -23,7 +25,7 @@ export default function About() {
                 </div>
               </div>
               {/* Image */}
-              <img
+              <Image
                 src="/cam2.jpg"
                 className="w-full h-auto aspect-square object-cover"
                 alt="Sameer"

@@ -9,6 +9,7 @@ import { IoMdContacts } from "react-icons/io";
 import { MdWorkHistory } from "react-icons/md";
 import { RiServiceFill } from "react-icons/ri";
 import { TbHomeFilled } from "react-icons/tb";
+import Image from "next/image";
 
 export default function HeaderComponent() {
   return (
@@ -34,7 +35,7 @@ export default function HeaderComponent() {
 
         <div className="flex justify-center  ">
           <div className="relative  rounded-b-xl overflow-hidden aspect-[3/1] max-w-[952px] w-full min-h-[11rem]">
-            <img
+            <Image
               src="/cam.jpg"
               alt="Camera Banner"
               className="w-full h-full object-cover"
@@ -46,7 +47,8 @@ export default function HeaderComponent() {
           <div className="w-[952px] max-w-[952px] max-h-[5rem] flex justify-between items-center px-[1.2rem] mt-[-0.8rem] sm:px-[1rem] lg:px-0 md:mt-[-0.2rem] lg:mt-0">
             <div className="flex flex-wrap items-center gap-3 sm:mt-[-1.5rem]">
               <div className="w-[85px] h-[85px] md:w-[100px] md:h-[100px] lg:w-[115px] lg:h-[115px] max-w-[115px] max-h-[115px] border-[3px] border-white overflow-hidden bg-cover bg-center rounded-full">
-                <img
+                <Image
+                alt="profile"
                   src="/profile.jpg"
                   className="scale-[3] object-cover mt-11 ml-[-1.5rem] md:scale-[3.2] md:mt-[3.8rem] md:ml-[-1.9rem] lg:scale-[3.2] lg:mt-[4.2rem] lg:ml-[-2.2rem]"
                 />

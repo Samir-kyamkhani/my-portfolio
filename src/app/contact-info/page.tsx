@@ -117,7 +117,7 @@ export default function Page() {
             <div className="flex flex-col lg:col-span-2 w-full justify-center items-center">
               <div className="w-full bg-white rounded-2xl py-5 px-6 text-[#192025]">
                 <div className="font-semibold text-[1.5rem] mt-4 sm:mt-0 mb-4 text-center lg:text-left">
-                  Let's work <span className="text-[#1E3B0B]">together.</span>
+                  {"Let's work"} <span className="text-[#1E3B0B]">together.</span>
                 </div>
                 <div className="mt-4 overflow-hidden">
                   <InlineWidget
@@ -146,7 +146,7 @@ export default function Page() {
 
                 {isSubmitted ? (
                   <div className="text-[#1E3B0B] text-center font-semibold sm:text-xl md:text-2xl">
-                    Your message has been sent! I'll contact you soon.
+                    {"Your message has been sent! I'll contact you soon."}
                   </div>
                 ) : (
                   <form

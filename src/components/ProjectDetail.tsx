@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 interface ProjectDetailProps {
   title: string;
   description: string;
-  images: string[]; // Array of image URLs
+  img: string[]; // Array of image URLs
   rating: number;
   tags: string[];
   year: string;
@@ -16,7 +17,7 @@ interface ProjectDetailProps {
 export default function ProjectDetail({
   title,
   description,
-  images, // Use images array here
+  img, // Use images array here
   rating,
   tags,
   year,
@@ -30,8 +31,8 @@ export default function ProjectDetail({
       <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6">
         {/* Image Showcase */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-          {images?.map((img, index) => (
-            <img
+          {img?.map((img, index) => (
+            <Image
               key={index}
               src={img}
               alt={`${title} photo ${index + 1}`}

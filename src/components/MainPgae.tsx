@@ -11,28 +11,28 @@ const item = [
     id: "1",
     title: "Lightroom preset v2",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    img: "/cam2.jpg",
+    Image: "/cam2.jpg",
     tag: "Full Stack",
   },
   {
     id: "2",
     title: "Lightroom preset v2",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    img: "/cam2.jpg",
+    Image: "/cam2.jpg",
     tag: "Full Stack",
   },
   {
     id: "3",
     title: "Lightroom preset v2",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    img: "/cam2.jpg",
+    Image: "/cam2.jpg",
     tag: "Full Stack",
   },
   {
     id: "4",
     title: "Lightroom preset v2",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    img: "/cam2.jpg",
+    Image: "/cam2.jpg",
     tag: "Full Stack",
   },
 ];
@@ -42,14 +42,14 @@ const cardData = [
     title: "William",
     desc: "Samir Kayamkhani provided an exceptional service in creating a professional website for my small business. I highly recommend Samir Kayamkhani for anyone looking to raise their online presence.",
     // tags: ["React", "Node.js", "JavaScript"],
-    profileImg: "/William.jpg",
+    profileImage: "/William.jpg",
     rating: 4,
   },
   {
     title: "Christopher",
     desc: "I am extremely impressed by Samir Kayamkhani. They created a stunning sales landing page website for me, perfectly capturing my brand identity and vision. Now i have a strong online presence represents my business. Thank you for your exceptional work!",
     // tags: ["UI/UX", "Design", "Figma"],
-    profileImg: "/Christopher.jpg",
+    profileImage: "/Christopher.jpg",
     rating: 5,
   },
   // Add more card objects here
@@ -89,7 +89,7 @@ export default function MainPage() {
             <div className="flex justify-center w-full">
               <div className="w-full max-w-[17rem] sm:max-w-[25rem]  min-w-full h-fit shadow-lg rounded-2xl bg-white text-[#192025] overflow-hidden flex flex-col mt-4  p-4 px-4">
                 <div className="w-full h-24  object-cover rounded-2xl bg-[#FBFBFC] text-[2rem] flex justify-between  sm:justify-center items-center gap-2 pl-2 font-bold">
-                  Let's Work together.
+                  {"Let's Work together."}
                 </div>
                 <div className="mt-4">
                   <Link href="/contact-info">

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -11,7 +12,7 @@ export default function TestimonialsCard({
     title: string;
     desc: string;
     tags?: string[];
-    profileImg: string;
+    profileImage: string;
     rating: number;
   }[];
   className?: string;
@@ -58,8 +59,8 @@ export default function TestimonialsCard({
                 </Link>
               </div>
               <div className="flex items-center mb-4">
-                <img
-                  src={card.profileImg}
+                <Image
+                  src={card.profileImage}
                   alt="Profile"
                   className="w-10 h-10 rounded-full mr-3 object-cover"
                 />

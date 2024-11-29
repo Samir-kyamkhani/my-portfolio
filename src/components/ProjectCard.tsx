@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function ProjectCard({
@@ -25,7 +26,8 @@ export default function ProjectCard({
             className={`rounded-2xl  py-5 px-6 text-[#192025] ${CardClassName}`}
           >
             <div className="flex flex-col items-center bg-white rounded-lg min-w-[300px] max-w-[300px] h-[482px] max-h-[482px] shadow-lg">
-              <img
+              <Image
+                alt="img"
                 src={img}
                 className="aspect-square object-cover rounded-t-lg"
               />

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomeProjectCard({
   project,
@@ -11,7 +12,7 @@ export default function HomeProjectCard({
     id: string;
     title: string;
     description: string;
-    img: string;
+    Image: string;
     tag: string;
   }[]; // Adjust this type to match the structure of your objects
   CardClassName?: string;
@@ -48,8 +49,8 @@ export default function HomeProjectCard({
                 >
                   <div className="flex gap-4 items-center">
                     <div className="w-[6rem] h-[6rem] border-[3px] border-none bg-cover bg-center">
-                      <img
-                        src={item.img}
+                      <Image
+                        src={item.Image}
                         alt={item.title}
                         className="object-cover w-full h-full"
                       />

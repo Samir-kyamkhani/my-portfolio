@@ -16,7 +16,7 @@ export default function Page() {
                 <ProjectCard
                   title={item.title}
                   description={item.description}
-                  img={item.img}
+                  img={item.Image}
                   tags={item.tags}
                   rating={item.rating}
                 />
