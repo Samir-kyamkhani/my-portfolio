@@ -9,31 +9,43 @@ import Link from "next/link";
 const item = [
   {
     id: "1",
-    title: "Lightroom preset v2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    Image: "/cam2.jpg",
-    tag: "Full Stack",
+    title: "Coffee Shop Landing Page",
+    description:
+      "A modern, responsive landing page built for a cozy coffee shop with engaging visuals.",
+    Image: "../../public/projects/cofe.jpeg",
+    tag: "Frontend",
   },
   {
     id: "2",
-    title: "Lightroom preset v2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    Image: "/cam2.jpg",
-    tag: "Full Stack",
+    title: "Fitness App UI Design",
+    description:
+      "A sleek UI design for a fitness tracking and coaching application.",
+    Image: "../../public/projects/fitnes.jpeg",
+    tag: "UI/UX",
   },
   {
     id: "3",
-    title: "Lightroom preset v2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    Image: "/cam2.jpg",
-    tag: "Full Stack",
+    title: "Jewelry Storefront Design",
+    description:
+      "Elegant and luxurious interface for an online jewelry store with a focus on product showcasing.",
+    Image: "../../public/projects/jewelry.jpeg",
+    tag: "eCommerce",
   },
   {
     id: "4",
-    title: "Lightroom preset v2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    Image: "/cam2.jpg",
+    title: "Restaurant Website",
+    description:
+      "A stylish website for a fine dining restaurant with an interactive menu and booking feature.",
+    Image: "../../public/projects/restorent.jpeg",
     tag: "Full Stack",
+  },
+  {
+    id: "5",
+    title: "Salon Booking Interface",
+    description:
+      "A beautiful and intuitive interface for online salon appointment bookings.",
+    Image: "../../public/projects/salon.jpeg",
+    tag: "Booking",
   },
 ];
 

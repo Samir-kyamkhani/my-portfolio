@@ -30,7 +30,7 @@ export default function ProjectDetail({
     <>
       <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6">
         {/* Image Showcase */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
+        <div className="w-full grid grid-cols-1  gap-4 mb-6">
           {img?.map((img, index) => (
             <Image
               key={index}
