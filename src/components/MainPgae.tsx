@@ -12,7 +12,7 @@ const item = [
     title: "Coffee Shop Landing Page",
     description:
       "A modern, responsive landing page built for a cozy coffee shop with engaging visuals.",
-    Image: "../../public/projects/cofe.jpeg",
+    Image: "/projects/cofe.jpeg",
     tag: "Frontend",
   },
   {
@@ -20,7 +20,7 @@ const item = [
     title: "Fitness App UI Design",
     description:
       "A sleek UI design for a fitness tracking and coaching application.",
-    Image: "../../public/projects/fitnes.jpeg",
+    Image: "/projects/fitnes.jpeg",
     tag: "UI/UX",
   },
   {
@@ -28,7 +28,7 @@ const item = [
     title: "Jewelry Storefront Design",
     description:
       "Elegant and luxurious interface for an online jewelry store with a focus on product showcasing.",
-    Image: "../../public/projects/jewelry.jpeg",
+    Image: "/projects/jewelry.jpeg",
     tag: "eCommerce",
   },
   {
@@ -36,7 +36,7 @@ const item = [
     title: "Restaurant Website",
     description:
       "A stylish website for a fine dining restaurant with an interactive menu and booking feature.",
-    Image: "../../public/projects/restorent.jpeg",
+    Image: "/projects/restorent.jpeg",
     tag: "Full Stack",
   },
   {
@@ -44,7 +44,7 @@ const item = [
     title: "Salon Booking Interface",
     description:
       "A beautiful and intuitive interface for online salon appointment bookings.",
-    Image: "../../public/projects/salon.jpeg",
+    Image: "/projects/salon.jpeg",
     tag: "Booking",
   },
 ];
