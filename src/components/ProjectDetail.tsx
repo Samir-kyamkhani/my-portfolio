@@ -28,7 +28,7 @@ export default function ProjectDetail({
 }: ProjectDetailProps) {
   return (
     <>
-      <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6">
+      <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 overflow-hidden">
         {/* Image Showcase */}
         <div className="w-full grid grid-cols-1  gap-4 mb-6">
           {img?.map((img, index) => (

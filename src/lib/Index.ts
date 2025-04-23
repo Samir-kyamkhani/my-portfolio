@@ -2,7 +2,7 @@
 export const projects = [
   {
     id: 1,
-    title: "Coffee Shop Website Design",
+    title: "Coffee Shop Website",
     description:
       "Modern and responsive coffee shop website layout built with React.",
     Image: "/projects/cofe.jpeg",
