@@ -30,9 +30,6 @@ export default function Page() {
   }, []);
 
   const [state, handleSubmit] = useForm("xrbqglyr");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -77,7 +74,8 @@ export default function Page() {
             <div className="flex flex-col lg:col-span-2 w-full justify-center items-center">
               <div className="w-full bg-white rounded-2xl py-5 px-6 text-[#192025]">
                 <div className="font-semibold text-[1.5rem] mt-4 sm:mt-0 mb-4 text-center lg:text-left">
-                  {"Let's work"} <span className="text-[#1E3B0B]">together.</span>
+                  {"Let's work"}{" "}
+                  <span className="text-[#1E3B0B]">together.</span>
                 </div>
                 <div className="mt-4 overflow-hidden">
                   {showCalendly && (
@@ -111,10 +109,7 @@ export default function Page() {
                     {"Your message has been sent! I'll contact you soon."}
                   </div>
                 ) : (
-                  <form
-                    className="grid gap-4 lg:gap-7"
-                    onSubmit={handleSubmit}
-                  >
+                  <form className="grid gap-4 lg:gap-7" onSubmit={handleSubmit}>
                     <input
                       name="name"
                       placeholder="Name *"
