@@ -50,6 +50,8 @@ export default function HomeProjectCard({
                   <div className="flex gap-4 items-center">
                     <div className="w-[6rem] h-[6rem] border-[3px] border-none bg-cover bg-center">
                       <Image
+                       width={25}
+                       height={25}
                         src={item.Image}
                         alt={item.title}
                         className="object-cover w-full h-full"

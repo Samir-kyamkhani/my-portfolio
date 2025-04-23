@@ -61,6 +61,8 @@ export default function TestimonialsCard({
               <div className="flex items-center mb-4">
                 <Image
                   src={card.profileImage}
+                  width={25}
+                  height={25}
                   alt="Profile"
                   className="w-10 h-10 rounded-full mr-3 object-cover"
                 />

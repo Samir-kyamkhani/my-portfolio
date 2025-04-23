@@ -20,6 +20,8 @@ export default function page() {
                 {/* Image */}
                 <Image
                   src="/cam2.jpg"
+                  width={25}
+                  height={25}
                   className="w-full h-auto aspect-square object-cover rounded-2xl"
                   alt="Sameer"
                 />

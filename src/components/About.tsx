@@ -14,8 +14,10 @@ export default function About() {
               <div className="bg-white px-4 py-2 flex items-center gap-2">
                 <div className="w-9 h-9  overflow-hidden  border-black/5 border-2   bg-cover bg-center rounded-full ">
                   <Image
-                  alt="profile"
+                    alt="profile"
                     src="/profile.jpg"
+                    width={25}
+                    height={25}
                     className="scale-[3] object-cover mt-5 ml-[-0.7rem]"
                   />
                 </div>
@@ -27,6 +29,8 @@ export default function About() {
               {/* Image */}
               <Image
                 src="/cam2.jpg"
+                width={25}
+                height={25}
                 className="w-full h-auto aspect-square object-cover"
                 alt="Sameer"
               />

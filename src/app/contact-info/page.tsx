@@ -1,13 +1,15 @@
 "use client";
+
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
-import emailjs from "emailjs-com";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { MdAddCall } from "react-icons/md";
+import { useForm } from "@formspree/react";
+
 const InlineWidget = dynamic(
   () => import("react-calendly").then((mod) => mod.InlineWidget),
   { ssr: false }
@@ -27,51 +29,11 @@ export default function Page() {
     setShowCalendly(true);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const [state, handleSubmit] = useForm("xrbqglyr");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
 
-    if (
-      !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
-      !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
-      !process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-    ) {
-      console.error("EmailJS environment variables are missing");
-      return;
-    }
-
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-      )
-      .then(
-        (result) => {
-          setIsSubmitted(true);
-          console.log(result.text);
-        },
-        (error) => {
-          console.error(error.text);
-        }
-      );
-  };
-
-  <div className="mt-4 overflow-hidden">
-    <InlineWidget
-      url="https://calendly.com/samirkayamkhani-dev/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=1e3b0b"
-      styles={{
-        width: "100%",
-        height: "700px",
-        overflow: "hidden",
-      }}
-    />
-    <style jsx global>{`
-      .calendly-inline-widget iframe {
-        overflow: hidden !important;
-      }
-    `}</style>
-  </div>;
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -84,7 +46,6 @@ export default function Page() {
       <div className="w-full flex justify-center min-w-[21rem] bg-[#F5F4F0]">
         <div className="w-full max-w-[952px] px-4 py-6 sm:px-6 md:px-8 lg:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* First Column: Contact Info */}
             <div className="flex justify-center w-full">
               <div className="w-full max-w-[20rem] rounded-2xl text-[#192025] flex flex-col mt-4 lg:mt-0">
                 <div className="rounded-2xl py-5 px-6 text-[#192025]">
@@ -113,21 +74,22 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Second Column: Form Component */}
             <div className="flex flex-col lg:col-span-2 w-full justify-center items-center">
               <div className="w-full bg-white rounded-2xl py-5 px-6 text-[#192025]">
                 <div className="font-semibold text-[1.5rem] mt-4 sm:mt-0 mb-4 text-center lg:text-left">
                   {"Let's work"} <span className="text-[#1E3B0B]">together.</span>
                 </div>
                 <div className="mt-4 overflow-hidden">
-                  <InlineWidget
-                    url="https://calendly.com/samirkayamkhani-dev/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=1e3b0b"
-                    styles={{
-                      width: "100%",
-                      height: "700px",
-                      overflow: "hidden",
-                    }}
-                  />
+                  {showCalendly && (
+                    <InlineWidget
+                      url="https://calendly.com/samirkayamkhani-dev/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=1e3b0b"
+                      styles={{
+                        width: "100%",
+                        height: "700px",
+                        overflow: "hidden",
+                      }}
+                    />
+                  )}
                   <style jsx global>{`
                     .calendly-inline-widget,
                     .calendly-inline-widget iframe,
@@ -150,7 +112,7 @@ export default function Page() {
                   </div>
                 ) : (
                   <form
-                    className="grid gap-4 lg:gap-7 "
+                    className="grid gap-4 lg:gap-7"
                     onSubmit={handleSubmit}
                   >
                     <input
@@ -160,6 +122,7 @@ export default function Page() {
                       className="w-full rounded-lg bg-[#FBFBFC] text-[1rem] p-3 outline-none border border-black/10"
                       onChange={handleChange}
                       value={formData.name}
+                      required
                     />
                     <input
                       name="email"
@@ -168,6 +131,7 @@ export default function Page() {
                       className="w-full rounded-lg bg-[#FBFBFC] text-[1rem] p-3 outline-none border border-black/10"
                       onChange={handleChange}
                       value={formData.email}
+                      required
                     />
                     <input
                       name="subject"
@@ -176,6 +140,7 @@ export default function Page() {
                       className="w-full rounded-lg bg-[#FBFBFC] text-[1rem] p-3 outline-none border border-black/10"
                       onChange={handleChange}
                       value={formData.subject}
+                      required
                     />
                     <textarea
                       name="message"
@@ -183,6 +148,7 @@ export default function Page() {
                       className="w-full rounded-lg bg-[#FBFBFC] text-[1rem] p-3 outline-none border border-black/10"
                       onChange={handleChange}
                       value={formData.message}
+                      required
                     />
                     <button
                       type="submit"
@@ -195,7 +161,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Third Column: Social Media */}
             <div>
               <div className="flex justify-center w-full lg:mt-[-50rem]">
                 <div className="w-full max-w-[17rem] sm:max-w-[20rem] md:max-w-[18rem] min-w-full h-fit shadow-lg rounded-2xl bg-white text-[#192025] overflow-hidden flex flex-col mt-4 p-4 px-4">
