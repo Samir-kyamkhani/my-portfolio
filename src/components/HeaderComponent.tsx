@@ -37,8 +37,8 @@ export default function HeaderComponent() {
           <div className="relative  rounded-b-xl overflow-hidden aspect-[3/1] max-w-[952px] w-full min-h-[11rem]">
             <Image
               src="/cam.jpg"
-              width={25}
-              height={25}
+             
+              
               alt="Camera Banner"
               className="w-full h-full object-cover"
             />
@@ -52,8 +52,8 @@ export default function HeaderComponent() {
                 <Image
                   alt="profile"
                   src="/profile.jpg"
-                  width={25}
-                  height={25}
+                 
+                  
                   className="scale-[3] object-cover mt-11 ml-[-1.5rem] md:scale-[3.2] md:mt-[3.8rem] md:ml-[-1.9rem] lg:scale-[3.2] lg:mt-[4.2rem] lg:ml-[-2.2rem]"
                 />
               </div>

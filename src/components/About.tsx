@@ -16,8 +16,8 @@ export default function About() {
                   <Image
                     alt="profile"
                     src="/profile.jpg"
-                    width={25}
-                    height={25}
+                   
+                    
                     className="scale-[3] object-cover mt-5 ml-[-0.7rem]"
                   />
                 </div>
@@ -29,8 +29,8 @@ export default function About() {
               {/* Image */}
               <Image
                 src="/cam2.jpg"
-                width={25}
-                height={25}
+               
+                
                 className="w-full h-auto aspect-square object-cover"
                 alt="Sameer"
               />
