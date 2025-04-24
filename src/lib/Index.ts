@@ -5,6 +5,7 @@ export const projects = [
     title: "Coffee Shop Website",
     description:
       "Modern and responsive coffee shop website layout built with React.",
+    liveUrl: "https://cafedummy.vercel.app",
     Image: "/projects/cofe.jpeg",
     tags: ["React js"],
     rating: 5,
@@ -13,6 +14,7 @@ export const projects = [
     id: 2,
     title: "Fitness Frontend Design",
     description: "Clean and energetic UI for a fitness and workout website.",
+    liveUrl: "https://gymdummy.vercel.app",
     Image: "/projects/fitnes.jpeg",
     tags: ["React js"],
     rating: 5,
@@ -22,6 +24,7 @@ export const projects = [
     title: "Jewelry Store UI",
     description:
       "Elegant and luxury-style frontend for an online jewelry store.",
+    liveUrl: "https://jewelry-orpin.vercel.app",
     Image: "/projects/jewelry.jpeg",
     tags: ["React js"],
     rating: 5,
@@ -30,6 +33,7 @@ export const projects = [
     id: 4,
     title: "Restaurant Website Design",
     description: "Minimalist and engaging layout for a modern restaurant.",
+    liveUrl: "https://qitchendummy.vercel.app",
     Image: "/projects/restorent.jpeg",
     tags: ["React js"],
     rating: 5,
@@ -39,6 +43,7 @@ export const projects = [
     title: "Salon Booking UI",
     description:
       "Stylish and intuitive frontend for a salon appointment system.",
+    liveUrl: "",
     Image: "/projects/salon.jpeg",
     tags: ["React js"],
     rating: 5,
@@ -52,6 +57,7 @@ export const items = [
     description:
       "A modern and vibrant website designed for a cozy coffee shop. Features rich visuals, smooth animations, and easy navigation to enhance user experience and drive local engagement.",
     images: ["/projects/cofe.jpeg"],
+    liveUrl: "https://cafedummy.vercel.app",
     rating: 5,
     tags: ["Frontend", "UI/UX"],
     year: "2024",
@@ -65,6 +71,7 @@ export const items = [
     description:
       "A static web application built for a fitness studio offering live class booking, trainer profiles, and fitness program management. Optimized for performance and mobile responsiveness.",
     images: ["/projects/fitnes.jpeg"],
+    liveUrl: "https://gymdummy.vercel.app",
     rating: 4,
     tags: ["Full Stack", "Fitness"],
     year: "2024",
@@ -78,6 +85,7 @@ export const items = [
     description:
       "An elegant online storefront for a premium jewelry brand. Designed with minimalism and luxury in mind, focusing on product showcases and a seamless shopping experience.",
     images: ["/projects/jewelry.jpeg"],
+    liveUrl: "https://jewelry-orpin.vercel.app",
     rating: 5,
     tags: ["Frontend", "eCommerce"],
     year: "2024",
@@ -91,6 +99,7 @@ export const items = [
     description:
       "A visually stunning website for a modern restaurant, featuring interactive menus, reservation booking, and customer reviews—all crafted for an immersive dining experience online.",
     images: ["/projects/restorent.jpeg"],
+    liveUrl: "https://qitchendummy.vercel.app",
     rating: 5,
     tags: ["Full Stack", "Restaurant"],
     year: "2024",
@@ -104,6 +113,7 @@ export const items = [
     description:
       "A sleek and stylish website with integrated appointment booking, service selection, and stylist portfolios. Designed for effortless client interaction and streamlined salon operations.",
     images: ["/projects/salon.jpeg"],
+    liveUrl: "https://qitchendummy.vercel.app",
     rating: 4,
     tags: ["UI/UX", "Booking"],
     year: "2024",
