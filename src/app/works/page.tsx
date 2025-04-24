@@ -23,14 +23,14 @@ export default function Page() {
                   />
                 </Link>
                 {item.liveUrl && (
-                  <a
+                  <Link
                     href={item.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-center px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition"
                   >
                     Visit Live Project
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
