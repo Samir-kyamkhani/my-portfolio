@@ -132,13 +132,17 @@ export const items = [
     project: "Static",
   },
   {
-    id: 6,
+    id: "6",
     title: "Dental Booking UI",
     description:
       "Stylish and intuitive frontend for a Dental appointment system.",
+    images: ["/projects/dental.jpg"],
     liveUrl: "https://dainteldummy.vercel.app",
-    Image: "/projects/dental.jpg",
-    tags: ["React js"],
     rating: 5,
+    tags: ["UI/UX", "Booking"],
+    year: "2024",
+    client: "GlowUp Studio",
+    services: "Web Design, Booking Integration",
+    project: "Static",
   },
 ];
