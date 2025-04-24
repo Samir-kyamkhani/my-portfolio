@@ -43,8 +43,18 @@ export const projects = [
     title: "Salon Booking UI",
     description:
       "Stylish and intuitive frontend for a salon appointment system.",
-    liveUrl: "",
+    liveUrl: "https://salondummy.vercel.app",
     Image: "/projects/salon.jpeg",
+    tags: ["React js"],
+    rating: 5,
+  },
+  {
+    id: 6,
+    title: "Dental Booking UI",
+    description:
+      "Stylish and intuitive frontend for a Dental appointment system.",
+    liveUrl: "https://dainteldummy.vercel.app",
+    Image: "/projects/dental.jpg",
     tags: ["React js"],
     rating: 5,
   },
@@ -113,12 +123,22 @@ export const items = [
     description:
       "A sleek and stylish website with integrated appointment booking, service selection, and stylist portfolios. Designed for effortless client interaction and streamlined salon operations.",
     images: ["/projects/salon.jpeg"],
-    liveUrl: "https://qitchendummy.vercel.app",
+    liveUrl: "https://salondummy.vercel.app",
     rating: 4,
     tags: ["UI/UX", "Booking"],
     year: "2024",
     client: "GlowUp Studio",
     services: "Web Design, Booking Integration",
     project: "Static",
+  },
+  {
+    id: 6,
+    title: "Dental Booking UI",
+    description:
+      "Stylish and intuitive frontend for a Dental appointment system.",
+    liveUrl: "https://dainteldummy.vercel.app",
+    Image: "/projects/dental.jpg",
+    tags: ["React js"],
+    rating: 5,
   },
 ];
