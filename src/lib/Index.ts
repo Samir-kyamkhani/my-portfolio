@@ -5,7 +5,7 @@ export const projects = [
     title: "School Management System",
     description:
       "Modern and responsive School Management System.",
-    liveUrl: "/",
+    liveUrl: ["/",],
     Image: "https://drive.google.com/uc?export=view&id=1aT60AeiW9NQQfA9ltTWW35HtAahsV7Pl",
     tags: ["React js","TypeScript", "Tailwind CSS","Node.js", "Express.js", "MySQL"],
     rating: 5,
@@ -15,7 +15,7 @@ export const projects = [
     title: "Car Rental System",
     description: "Clean and energetic and user-friendly Car Rental System.",
     liveUrl: "https://grabacar.xyz/",
-    Image: "/projects/car.png",
+    Image: ["/projects/car.png",],
     tags: ["Laravel", "CSS", "JavaScript", "MySQL"],
     rating: 5,
   },
