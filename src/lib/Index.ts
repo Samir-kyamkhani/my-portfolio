@@ -66,7 +66,7 @@ export const items = [
     description:
       "Modern and responsive School Management System.",
     liveUrl: "/",
-    images: ["https://drive.google.com/uc?export=view&id=1aT60AeiW9NQQfA9ltTWW35HtAahsV7Pl"],
+       images: ["https://drive.google.com/uc?export=view&id=1aT60AeiW9NQQfA9ltTWW35HtAahsV7Pl"],
     tags: ["React js","TypeScript", "Tailwind CSS","Node.js", "Express.js", "MySQL"],
      year: "2024",
      client: "My project",
@@ -79,7 +79,7 @@ export const items = [
     title: "Car Rental System",
     description:
       "Clean and energetic and user-friendly Car Rental System.",
-    images: ["/projects/car.png"],
+       images: ["/projects/car.png"],
     liveUrl: "https://grabacar.xyz",
     rating: 5,
     tags: ["Laravel", "CSS", "JavaScript", "MySQL"],
