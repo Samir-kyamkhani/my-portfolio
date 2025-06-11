@@ -20,8 +20,6 @@ export default function page() {
                 {/* Image */}
                 <Image
                   src="/cam2.jpg"
-                 
-                  
                   className="w-full h-auto aspect-square object-cover rounded-2xl"
                   alt="Sameer"
                 />
@@ -102,6 +100,11 @@ export default function page() {
                       <div>
                         <div className={`text-[1rem] font-semibold mt-1 mb-1`}>
                           ReactJS
+                        </div>
+                      </div>
+                      <div>
+                        <div className={`text-[1rem] font-semibold mt-1 mb-1`}>
+                          Laravel
                         </div>
                       </div>
                       <div>
