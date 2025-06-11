@@ -9,44 +9,44 @@ import Link from "next/link";
 const item = [
   {
     id: "1",
-    title: "Coffee Shop Landing Page",
+    title: "School Management System",
     description:
-      "A modern, responsive landing page built for a cozy coffee shop with engaging visuals.",
-    Image: "/projects/cofe.jpeg",
-    tag: "Frontend",
+      "Modern and responsive School Management System.",
+    Image: "https://drive.google.com/uc?export=view&id=1aT60AeiW9NQQfA9ltTWW35HtAahsV7Pl",
+    tag: "Full-Stack",
   },
   {
     id: "2",
-    title: "Fitness App UI Design",
+    title: "Car Rental System",
     description:
-      "A sleek UI design for a fitness tracking and coaching application.",
-    Image: "/projects/fitnes.jpeg",
-    tag: "UI/UX",
+      "Clean and energetic and user-friendly Car Rental System.",
+    Image: "/projects/car.png",
+    tag: "Laravel",
   },
-  {
-    id: "3",
-    title: "Jewelry Storefront Design",
-    description:
-      "Elegant and luxurious interface for an online jewelry store with a focus on product showcasing.",
-    Image: "/projects/jewelry.jpeg",
-    tag: "eCommerce",
-  },
-  {
-    id: "4",
-    title: "Restaurant Website",
-    description:
-      "A stylish website for a fine dining restaurant with an interactive menu and booking feature.",
-    Image: "/projects/restorent.jpeg",
-    tag: "Full Stack",
-  },
-  {
-    id: "5",
-    title: "Salon Booking Interface",
-    description:
-      "A beautiful and intuitive interface for online salon appointment bookings.",
-    Image: "/projects/salon.jpeg",
-    tag: "Booking",
-  },
+  // {
+  //   id: "3",
+  //   title: "Jewelry Storefront Design",
+  //   description:
+  //     "Elegant and luxurious interface for an online jewelry store with a focus on product showcasing.",
+  //   Image: "/projects/jewelry.jpeg",
+  //   tag: "eCommerce",
+  // },
+  // {
+  //   id: "4",
+  //   title: "Restaurant Website",
+  //   description:
+  //     "A stylish website for a fine dining restaurant with an interactive menu and booking feature.",
+  //   Image: "/projects/restorent.jpeg",
+  //   tag: "Full Stack",
+  // },
+  // {
+  //   id: "5",
+  //   title: "Salon Booking Interface",
+  //   description:
+  //     "A beautiful and intuitive interface for online salon appointment bookings.",
+  //   Image: "/projects/salon.jpeg",
+  //   tag: "Booking",
+  // },
 ];
 
 const cardData = [
